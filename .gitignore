@@ -1,0 +1,12 @@
+__pycache__
+.idea
+
+venv/
+
+channel*
+*.csv
+
+.env
+
+config.py
+
