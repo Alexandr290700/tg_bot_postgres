@@ -1,8 +1,12 @@
 import con_to_postgres
 from con_to_postgres import connection  ## FROM YOUR conn DB
-from config import TOKEN
 import telebot
 from telebot import types
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+TOKEN = os.getenv("TOKEN")
 
 bot = telebot.TeleBot(token=TOKEN)
 
